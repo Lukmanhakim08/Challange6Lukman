@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
-    const val BASE_URL = "https://restcountries.com/v2/"
+    const val BASE_URL = "https://6254434289f28cf72b5aed04.mockapi.io/"
 
     private val logging : HttpLoggingInterceptor
         get() {
@@ -26,4 +26,5 @@ object ApiClient {
             .build()
         retrofit.create(EndPoind::class.java)
     }
+
 }
